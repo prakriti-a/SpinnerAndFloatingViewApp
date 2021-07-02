@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--Root View / Container-->
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--Collapsed state-->
+        <LinearLayout
+            android:id="@+id/collapsedView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <!--collapsed image-->
+            <ImageView
+                android:id="@+id/collapsedImageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/bird"/>
+
+            <!--close button-->
+            <ImageView
+                android:id="@+id/collapsedCloseButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/close_button"/>
+
+        </LinearLayout>
+
+        <!--Expanded view-->
+        <LinearLayout
+            android:id="@+id/expandedView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="#bbffff"
+            android:alpha="0.7"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/imgLion"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/lion"/>
+
+            <ImageView
+                android:id="@+id/imgPreviousButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/previous_button"/>
+
+            <ImageView
+                android:id="@+id/imgLeopard"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/leopard"/>
+
+            <ImageView
+                android:id="@+id/imgNextButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/next_button"/>
+
+            <!--for close & open buttons-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <!--close button for expanded view-->
+                <ImageView
+                    android:id="@+id/expandedCloseButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/close_button"
+                    android:layout_marginStart="8dp"/>
+
+                <!--open button for expanded view-->
+                <ImageView
+                    android:id="@+id/expandedOpenButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/open_android"
+                    android:layout_marginStart="8dp"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

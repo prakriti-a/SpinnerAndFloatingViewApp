@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Spinner and Floating View</string>
+    <string name="select_sport">Please select a Sport:</string>
+    <string name="float_window">Show Floating View</string>
+
+    <string-array name="sports">
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Rugby</item>
+        <item>Dodgeball</item>
+        <item>Volleyball</item>
+    </string-array>
+</resources>
